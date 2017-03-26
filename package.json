@@ -1,0 +1,39 @@
+{
+  "name": "angular-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "lite-server -c=bs-config.json",
+    "build": "tsc -p src/",
+    "build:watch": "tsc -p src/ -w",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/to-r/angular-base.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/to-r/angular-base/issues"
+  },
+  "homepage": "https://github.com/to-r/angular-base#readme",
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "lite-server": "^2.3.0",
+    "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.2.0",
+    "systemjs": "^0.19.47",
+    "zone.js": "^0.8.5"
+  }
+}
